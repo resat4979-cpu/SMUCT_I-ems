@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Payment | SMUCT i-EMS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body data-page="pay" data-title="Online Payment">
+<section id="page">
+ <div class="panel" style="display:flex;align-items:center;gap:20px;padding:20px 24px;margin-bottom:16px;border-radius:8px;background:linear-gradient(90deg,#f6f7ff,#e9ebfb);position:relative;overflow:hidden">
+   <span style="width:64px;height:64px;border-radius:50%;background:#fff;border:3px solid #fff;box-shadow:0 0 0 2px #cfd5ff;display:grid;place-items:center;font-size:36px;color:#333"><img id="ph" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover"></span>
+   <div><div id="nm" style="font-size:17px;font-weight:700"></div><span id="sid" style="display:inline-block;margin-top:4px;font-size:10.5px;background:#e3e7fb;border:1px solid #cfd5f3;border-radius:4px;padding:1px 7px"></span></div>
+   <img class="campus" src="../assets/img/campus.svg" alt="" style="position:absolute;right:20px;bottom:0;height:100px;opacity:.55"></div>
+ <div id="stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:16px"></div>
+ <div class="panel" style="padding:12px 8px 24px;background:#fff">
+  <div style="margin:0 0 6px 160px"><a class="btn" style="background:#e03a2b;font-size:11px;padding:6px 14px" href="#" data-noload><i class="fa-brands fa-youtube"></i> How to Pay Through bKash ( Video Tutorial )</a></div>
+  <div style="display:grid;grid-template-columns:560px 1fr;gap:14px;align-items:start">
+   <div class="panel"><div style="background:#5bb8e0;color:#fff;font-weight:600;padding:7px 10px"><i class="fa-solid fa-forward-step"></i> Step 1: Select Payment Amount</div>
+    <div style="padding:10px"><div style="border:1px solid #e3e3e3"><div style="padding:10px;background:#f7f7f7;font-weight:600;border-bottom:1px solid #e3e3e3">Check Due For: <select id="sem"></select></div>
+     <table class="kv" id="opts" style="font-size:13px"></table>
+     <div style="text-align:center;padding:8px"><span class="tag" style="background:#e9b200;color:#fff">Note:</span><span style="background:#e9b200;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px">You Can Edit Payable Amount at Step 2.</span></div>
+     <div style="text-align:center;padding:6px 0 12px"><button class="btn" id="next" style="background:#8dc77b;padding:7px 18px" disabled><i class="fa-solid fa-arrow-right"></i> Next (for Step 2)</button></div></div></div></div>
+   <div class="panel"><div style="background:#5bb8e0;color:#fff;font-weight:600;padding:7px 10px"><i class="fa-solid fa-forward-step"></i> Step 2: Online Payable Summary</div>
+    <div style="padding:10px" id="step2"><div style="background:#fcf3b5;border:1px solid #f0e08a;padding:8px 10px;font-size:12px"><b><i class="fa-solid fa-triangle-exclamation"></i> Attention!</b> Please Complete Step 1.</div></div></div>
+  </div></div>
+</section>
+<script src="../data/config.js"></script>
+<script src="../data/menu.js"></script>
+<script src="../data/student.js"></script>
+<script src="../data/courses.js"></script>
+<script src="../data/payments.js"></script>
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/pages/online-payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login | SMUCT i-EMS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body class="auth" data-public="1">
+<div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div><div class="shape s4"></div>
+<div class="shape s5"></div><div class="shape s6"></div><div class="shape s7"></div>
+<form class="auth-card" id="f" autocomplete="off">
+  <img class="logo" src="assets/img/logo.png" alt="SMUCT">
+  <h2>Login to i-EMS</h2>
+  <div class="alert danger" id="al" hidden><span><b>Sorry!</b> Invalid Username or Password.</span><button type="button" class="x" id="alx">&#10005;</button></div>
+  <label for="uid">User ID</label><input id="uid" type="text" required>
+  <label for="pw">Password</label>
+  <div class="pw"><input id="pw" type="password" required><i class="fa-regular fa-eye" id="eye"></i></div>
+  <button class="go" type="submit"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+    <a class="forgot" href="#" data-noload>Forgot Password?</a>
+  <div class="by">Developed &amp; Maintained by<img src="assets/img/vendor.png" alt="Pipilika Soft"></div>
+</form>
+<script src="data/config.js"></script>
+<script src="data/student.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>

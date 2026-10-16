@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Course Pane | SMUCT i-EMS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body data-page="" data-title="Course Pane">
+<section id="page"><div class="panel" style="border-left:4px solid #4caf50;padding:7px 10px;display:flex;justify-content:space-between;color:#555;font-size:12.5px"><span><i class="fa-solid fa-building-columns" style="color:#4caf50"></i>&nbsp; <span id="ct"></span></span><span id="sm"></span></div>
+ <div style="display:flex;justify-content:space-between;font-size:10.5px;margin:4px 2px"><span id="l"></span><span id="r" style="font-style:italic"></span></div>
+ <div class="panel"><div class="tabs" id="tabs"><button class="on" data-t="attendance">Attendance</button><button data-t="materials">Course Materials <span class="chip ok" style="font-size:8px;padding:0 4px">new</span></button><button data-t="notices">Notices</button><button data-t="classes">Online Classes</button></div>
+  <div class="tabpane on" id="attendance"></div><div class="tabpane" id="materials" style="padding:18px;color:#777">No course materials uploaded yet.</div>
+  <div class="tabpane" id="notices" style="padding:18px;color:#777">No notices.</div><div class="tabpane" id="classes" style="padding:18px;color:#777">No online classes scheduled.</div></div></section>
+<script src="../data/config.js"></script>
+<script src="../data/menu.js"></script>
+<script src="../data/student.js"></script>
+<script src="../data/courses.js"></script>
+<script src="../data/payments.js"></script>
+<script src="../data/registration.js"></script>
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/pages/course-pane.js"></script>
+</body>
+</html>

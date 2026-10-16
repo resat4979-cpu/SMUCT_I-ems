@@ -1,0 +1,62 @@
+/* ===== base.css — রং, font, topbar, sidebar, page layout =====
+   রং/মাপ বদলাতে চাইলে শুধু :root এর variable গুলো বদলান */
+:root{
+  --ink:#1c2233; --muted:#7b8294; --line:#e3e6f0;
+  --bg:#e5e8fc; --bg-dash:#f7f8fc; --brand:#1e2b6b; --link:#3b4cc0; --active:#e7eaff;
+  --side-w:172px; --top-h:41px; --topline:#3a2a45;
+  --green:#22b45e; --pink:#d6126e; --orange:#f2994a; --purple:#7c4ddb;
+  --indigo:#4457d4; --cyan:#1fa6d9; --rose:#e0407e; --teal:#1fb394;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:'Open Sans','Segoe UI',Arial,sans-serif;font-size:13px;color:var(--ink);background:var(--bg);min-height:100vh}
+body.bg-dash{background:var(--bg-dash)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+
+/* topbar */
+.topbar{position:fixed;inset:0 0 auto 0;height:var(--top-h);background:#fff;border-top:3px solid var(--topline);display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 6px;z-index:30;box-shadow:0 1px 0 var(--line)}
+.topbar .left{display:flex;align-items:center;gap:10px}
+.topbar .logo{height:28px;display:block}
+.topbar .burger{background:none;border:0;font-size:15px;color:var(--ink);padding:4px}
+.topbar .user{display:flex;align-items:center;gap:12px;font-weight:600;font-size:12px}
+.topbar .user img{width:24px;height:24px;border-radius:3px;object-fit:cover}
+.topbar .power{background:none;border:0;font-size:14px;color:var(--ink)}
+
+/* sidebar */
+.sidebar{position:fixed;top:var(--top-h);bottom:0;left:0;width:var(--side-w);background:#fff;border-right:1px solid var(--line);overflow-y:auto;z-index:20;transition:transform .2s}
+.sidebar a.item,.sidebar .item{display:flex;align-items:center;gap:7px;padding:10px 8px;font-size:12.5px;border-left:3px solid transparent;width:100%;background:none;border-top:0;border-right:0;border-bottom:0;text-align:left;color:var(--ink)}
+.sidebar .item i.ic{width:13px;font-size:10px;text-align:center}
+.sidebar .item.small{font-size:9.5px;padding:11px 8px}
+.sidebar .item:hover{background:#f3f4fd}
+.sidebar .item.active{background:var(--active);border-left-color:#2f4fc2;color:#2f4fc2;font-weight:700}
+.sidebar .item .chev{margin-left:auto;font-size:9px;color:var(--muted);transition:transform .15s}
+.sidebar .group.open>.item .chev{transform:rotate(90deg)}
+.sidebar .sub{display:none;background:#fafbff}
+.sidebar .group.open>.sub{display:block}
+.sidebar .sub a{padding-left:28px;font-size:12px}
+.sidebar .foot{padding:12px 8px;font-weight:700;font-size:11.5px;color:#13a4c4;border-top:1px solid var(--line)}
+body.side-collapsed .sidebar{transform:translateX(-100%)}
+body.side-collapsed .main{margin-left:0}
+
+/* main */
+.main{margin-left:var(--side-w);padding-top:var(--top-h);transition:margin .2s}
+.page-head{display:flex;justify-content:space-between;align-items:flex-end;padding:8px 14px 4px 12px}
+.page-head h1{margin:0;font-size:13.5px;font-weight:700}
+.tools{display:flex;gap:4px}
+.tools button{width:30px;background:none;border:0;border-bottom:3px solid var(--c);padding:3px 0 2px;font-size:13px;color:#222}
+.content{padding:6px 14px 28px}
+body.compact .content{max-width:1180px;margin:0 auto}
+
+/* loading overlay (পেজ বদলের সময়) */
+.loader{position:fixed;inset:var(--top-h) 0 0 var(--side-w);background:rgba(255,255,255,.7);display:none;align-items:center;justify-content:center;z-index:25;font-size:46px;color:#0f8f86}
+body.loading .loader{display:flex}
+body.loading .loader i{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media (max-width:900px){
+  .main{margin-left:0}.sidebar{transform:translateX(-100%)}
+  body.side-open .sidebar{transform:none}
+  .loader{inset:var(--top-h) 0 0 0}
+}
+@media print{.topbar,.sidebar,.tools,.btn-print{display:none!important}.main{margin:0;padding:0}}

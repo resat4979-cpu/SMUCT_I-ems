@@ -1,0 +1,50 @@
+/* ===== components.css — table, tab, button, notice ইত্যাদি ===== */
+.panel{background:#fff;border:1px solid #dfe2ee;box-shadow:0 1px 3px rgba(30,40,90,.08)}
+.notice{background:#fff;border:1px solid #dfe2ee;margin-bottom:12px}
+.notice .hd{background:#57b846;color:#fff;font-weight:600;padding:7px 10px;font-size:12px}
+.notice .bd{padding:7px 10px;font-size:11.5px}
+.tag{display:inline-block;background:#2b2b2b;color:#fff;font-size:9.5px;font-weight:700;padding:1px 4px;border-radius:3px;margin-right:4px}
+
+.tabs{display:flex;gap:3px;background:#f1f1f1;border-bottom:1px solid #ddd;padding:6px 6px 0}
+.tabs button{background:#f6f6fb;border:1px solid #d8dbea;border-bottom:0;padding:5px 9px;font-size:12px;color:#4a4fb0;border-radius:3px 3px 0 0}
+.tabs button.on{background:#fff;color:#111;font-weight:700;border-top:2px solid #2aa5b5}
+.tabpane{display:none;background:#fff}.tabpane.on{display:block}
+
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th,.tbl td{border:1px solid #e7e9f2;padding:6px 8px;vertical-align:top}
+.tbl th{background:#f8f8fb;font-weight:700;text-align:center}
+.tbl tr.grp td{background:#d6d6d6;text-align:center;font-weight:700}
+.tbl .num{text-align:right}.tbl .c{text-align:center}
+.tbl .sub{font-size:10.5px;color:#444;padding-left:10px}.tbl .sub.red{color:#b04040}
+.kv{width:100%;border-collapse:collapse;font-size:12px}
+.kv td{border:1px solid #e3e5ee;padding:6px 8px}.kv td:first-child{font-weight:700;width:34%;background:#fcfcfe}
+
+.btn{display:inline-block;border:1px solid transparent;border-radius:3px;padding:4px 9px;font-size:11.5px;font-weight:600;color:#fff}
+.btn.green{background:#5aa626;border-color:#4a8a1d}.btn.red{background:#d0021b}.btn.teal{background:#27a3b8}
+.btn.dark{background:#c9344a}.btn:disabled{opacity:.45;cursor:not-allowed}
+.chip{display:inline-block;padding:1px 8px;border-radius:10px;font-size:10.5px;font-weight:600}
+.chip.ok{background:#4cae4c;color:#fff}.chip.due{background:#ffc9d0;color:#c2123a}
+.chip.soft{background:#e3f6ea;color:#1f9d55;border:1px solid #c9ecd6}
+select{font:inherit;font-size:12px;padding:2px 4px;border:1px solid #c9ccd9;border-radius:3px;background:#fff}
+.sum-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sum-grid .row{display:flex;justify-content:space-between;padding:6px 14px;font-size:12px;font-weight:700;color:#444}
+.sum-grid .row span:last-child{font-weight:400;min-width:90px;text-align:center}
+.sum-grid h3{margin:0;padding:6px 10px;font-size:12px;border-bottom:2px solid #c9dcf5;color:#555}
+@media(max-width:900px){.sum-grid{grid-template-columns:1fr}.tbl{font-size:11px}.table-wrap{overflow-x:auto}}
+
+/* ===== v2: ভিডিও-২ এর সাথে মেলানো অংশ ===== */
+.chip.due{background:#e00000;color:#fff;border-radius:3px;padding:1px 5px;font:700 10.5px Consolas,'Courier New',monospace}
+.chip.abs{background:#d9534f;color:#fff}
+.alert{padding:8px 12px;border-radius:3px;font-size:12.5px;color:#fff;background:#dd6a6a;border:1px solid #d65a5a;display:flex;align-items:center;gap:6px}
+.alert.danger b{font-weight:700}
+.alert .x{margin-left:auto;opacity:.45;cursor:pointer;background:none;border:0;color:#fff;font-size:14px}
+.box{background:#fff;box-shadow:0 1px 4px rgba(30,40,90,.28)}
+.box>.bh{text-align:center;font-weight:700;color:#555;padding:8px 10px;border-bottom:2px solid #1e66e8;font-size:12.5px}
+.tbl.bk{border:1px solid #000}.tbl.bk th,.tbl.bk td{border:1px solid #000;font-size:12.5px}.tbl.bk th{background:#f9f9f9;color:#555}
+.tbl.bk tbody tr:nth-child(even) td{background:#fafafa}
+.tbl.bk .cr{font-style:italic;font-size:11.5px}
+.tag.red{background:#e00000;font-family:Consolas,'Courier New',monospace}
+.tbl.pay td{font-size:11.5px}.tbl.pay tr.fail td{color:#d0021b}
+.btn.ps{background:#27a3b8;font-size:10px;padding:3px 7px;border-radius:3px}
+.tot td{text-align:right;font-weight:700;border-left:0;border-right:0}
+.sum-grid h3{border-bottom:2px solid #1e66e8}

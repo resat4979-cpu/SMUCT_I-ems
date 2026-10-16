@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Due & Payments | SMUCT i-EMS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body data-page="due" data-title="Due &amp; Payments">
+<section id="page">
+ <div class="notice"><div class="hd"><i class="fa-solid fa-circle-info"></i>&nbsp; Important Notice</div><div class="bd"><span class="tag">Note:</span><span id="note"></span></div></div>
+ <div class="panel"><div class="tabs" id="tabs"><button class="on" data-t="t1">Payment Summary</button><button data-t="t2">Payment History (Credit)</button><button data-t="t3">All Bill (Debit)</button><button data-t="t4">Online Payment History</button></div>
+  <div class="tabpane on" id="t1" style="padding:0"><div class="sum-grid"><div class="panel" style="border:0"><h3><i class="fa-regular fa-copy"></i> Payment Summary for <select id="sem"></select> <button class="btn teal" id="ref"><i class="fa-solid fa-rotate"></i> Refresh</button></h3><div id="s1" style="padding:6px 0"></div></div>
+   <div class="panel" style="border:0"><h3><i class="fa-regular fa-copy"></i> Over all Summary</h3><div id="s2" style="padding:6px 0"></div></div></div></div>
+  <div class="tabpane" id="t2" style="padding:6px 8px"><div class="table-wrap"><table class="tbl" id="cr"></table></div></div>
+  <div class="tabpane" id="t3" style="padding:6px 8px"><div class="table-wrap"><table class="tbl" id="db"></table></div></div>
+  <div class="tabpane" id="t4" style="text-align:center;padding:8px"><button class="btn teal" id="load" style="font-size:12px;padding:7px 14px"><i class="fa-solid fa-rotate"></i> Load Online Payment History</button><div id="ol" style="text-align:left"></div></div></div>
+</section>
+<script src="../data/config.js"></script>
+<script src="../data/menu.js"></script>
+<script src="../data/student.js"></script>
+<script src="../data/courses.js"></script>
+<script src="../data/payments.js"></script>
+<script src="../data/registration.js"></script>
+<script src="../assets/js/layout.js"></script>
+<script src="../assets/js/pages/due-payments.js"></script>
+</body>
+</html>
