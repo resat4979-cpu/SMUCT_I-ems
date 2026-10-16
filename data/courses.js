@@ -4,9 +4,9 @@ DATA.semesters = [
  { name:"Fall 2024 (4M)", courses:[] }, { name:"Spring 2025 (4M)", courses:[] }, { name:"Summer 2025 (4M)", courses:[] },
  { name:"Fall 2025 (4M)", courses:[] },  { name:"Spring 2026 (4M)", courses:[] }, { name:"Summer 2026 (4M)", courses:[] },
  { name:"Fall 2026 (4M)", year:"3rd Year 1st Semester", courses:[
-   _e("ENG-2301","Victorian Poetry [A]","Tasnim Ahmed",[{day:"Sun",time:"8:30 AM - 10:00 AM",room:"1704-Classroom-1704, Main, Permanent"},{day:"Tue",time:"1:00 PM - 2:30 PM",room:"1703-Classroom-1703, Main, Permanent"}]),
-   _e("ENG-2303","History of English Language [A]","Nusrat Tasnim Arna",[{day:"Tue",time:"8:30 AM - 10:00 AM",room:"1703-Classroom-1703, Main, Permanent"},{day:"Wed",time:"11:00 AM - 12:20 PM",room:"1703-Classroom-1703, Main, Permanent"}]),
-   _e("ENG-2305","Second Language Acquisition [A]","Nusrat Tasnim Arna",[{day:"Sun",time:"1.00 PM - 2:30 PM",room:"1704-Classroom-1704, Main, Permanent"},{day:"Wed",time:"12.30 PM - 1:30 PM",room:"1704-Classroom-1704, Main, Permanent"}])
+   _e("ENG-2301","Victorian Poetry [A]","Tasnim Ahmed",[{day:"Sat",time:"8:30 AM - 10:00 AM",room:"1704-Classroom-1704, Main, Permanent"},{day:"Tue",time:"1:00 PM - 2:30 PM",room:"1703-Classroom-1703, Main, Permanent"}]),
+   _e("ENG-2303","History of English Language [A]","Nusrat Tasnim Arna",[{day:"Tue",time:"8:30 AM - 10:00 AM",room:"1703-Classroom-1703, Main, Permanent"},{day:"Wed",time:"11:30 AM - 1:00 PM",room:"1703-Classroom-1703, Main, Permanent"}]),
+   _e("ENG-2305","Second Language Acquisition [A]","Nusrat Tasnim Arna",[{day:"Sat",time:"1.00 PM - 2:30 PM",room:"1704-Classroom-1704, Main, Permanent"},{day:"Wed",time:"1.00 PM - 2:30 PM",room:"1704-Classroom-1704, Main, Permanent"}])
  ] }
 ];
 /* কোর্স কার্ডের আইকন/রং ঘুরে ঘুরে বসে */
